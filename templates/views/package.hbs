@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Genix</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"/>
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    {{!-- <header>
+        <div>
+          <i class="fas fa-plane"></i>
+          <h2>Travel Genix</h2>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="package.html">Package</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="cart.html">Cart<i class="fas fa-luggage-cart"></i></a></li>
+          </ul>
+        </nav>
+      </header> --}}
+{{>navbar}}
+      <section class="happyclients" id="happyclientdiv">
+		<div class="container headings text-center">
+			<h1> Our Affordable packages</h1>
+			<p style="color: #000; font-size: 1.5rem; text-align: center	;">It is often referred to as the "Devabhumi" (literally "Land of the Gods") due to numerous Hindu temples and pilgrimage centres found throughout the state. Uttarakhand is known for the natural environment of the Himalayas, the Bhabar and the Terai regions.</p>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="travel-tour travel-light-grey">
+            <section class=packagesoffers id=packagediv>
+                <div class="container headings text-center">
+                <h1 class="text-center font-weight-bold">What Do We Offers</h1>
+                <h2>!-----------Popular Destination-------!</h2>
+                </div>
+                </section>
+                <div class="tour-wrap">
+                    <a href="#" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/andamon.jpg);"><p class="imgp">Andaman</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Andaman</h2>
+                            <span class="city">Andaman</span>
+                            <span class="price">Rs: 6999/-</span>
+                            <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                    <a href="Rishikesh" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/rishikesh.jpg);"><p class="imgp">Rishikesh</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Rishikesh</h2>
+                            <span class="city">Uttarakhand</span>
+                            <span class="price">Rs: 2549/-</span>
+                           <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                    <a href="#" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/almora.jpg);"><p class="imgp">Almora</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Almora</h2>
+                            <span class="city">Uttarakhand</span>
+                            <span class="price">Rs: 2549/-</span>
+                            <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                    <a href="Badrinath" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/badrinath.jpg);"><p class="imgp">Badrinath</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Badrinath</h2>
+                            <span class="city">Uttarakhand</span>
+                            <span class="price">Rs: 3549/-</span>
+                             <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                    <a href="#" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/chamoli.jpg);"><p class="imgp">Chamoli</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Chamoli</h2>
+                            <span class="city">Uttarakhand</span>
+                            <span class="price">Rs: 4569/-</span>
+                            <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                    <a href="#" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/aouli.jpg);"><p class="imgp">Aouli</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Aouli</h2>
+                            <span class="city">Uttarakhand</span>
+                            <span class="price">Rs: 4550/-</span>
+                            <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                    <a href="#" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/nikobar.jpg);"><p class="imgp">Nikobar</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Nikobar</h2>
+                            <span class="city">Uttarakhand</span>
+                            <span class="price">Rs: 9999/-</span>
+                        <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                    <a href="#" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/nainital.jpg);"><p class="imgp">Nainital</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Nainital</h2>
+                            <span class="city">Uttarakhand</span>
+                            <span class="price">Rs: 9999/-</span>
+                        <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                    <a href="Kedarnath" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/kedarnath.jpg);"><p class="imgp">Kedarnath</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Kedarnath Temple</h2>
+                            <span class="city">Uttarakhand</span>
+                            <span class="price">Rs: 9999/-</span>
+                        <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                    <a href="#" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/rajaji.jpg);"><p class="imgp">Rajaji National Park</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Rajaji National park</h2>
+                            <span class="city">Uttarakhand</span>
+                            <span class="price">Rs: 9799/-</span>
+                        <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                    <a href="#" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/valley.jpg);"><p class="imgp">Valley Of Flower national park</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Valley of Flower National park</h2>
+                            <span class="city">Uttarakhand</span>
+                            <span class="price">Rs: 8999/-</span>
+                        <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                    <a href="#" class="tour-entry animate-box">
+                        <div class="tour-img" style="background-image: url(images/youmotri.jpg);"><p class="imgp">Yamunotri</p></div>
+                        <span class="desc">
+                            <h2>Family Tour in Yamunotri</h2>
+                            <span class="city">Uttarakhand</span>
+                            <span class="price">Rs: 9299/-</span>
+                        <button onclick="window.location.href='/pay'">pay</button>
+                        </span>
+                    </a>
+                </div>
+        </div>
+        </section>
+
+        
+</body>
+</html>

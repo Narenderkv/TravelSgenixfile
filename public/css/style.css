@@ -1,0 +1,558 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: "open sans";
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.aside-div {
+  background: url(../images/blog-3.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*----------------NAVBAR------------*/
+.travel-main {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-weight: 200;
+  }
+  .travel-main a {
+  position: relative;
+  color: #ffce14;
+  text-decoration-line: none;
+  }
+header {
+  display: flex;
+  justify-content: space-between;
+  color: #ffce14;
+  background: #0f2453;
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "roboto";
+  margin: 0 2rem;
+}
+header div i {
+  font-size: 2rem;
+  margin: 1rem;
+}
+header nav {
+  padding: 1rem 1rem;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+nav li a {
+  padding: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: white;
+  transition: all 250ms ease-in;
+}
+nav li a:hover {
+  background: #ffce14;
+  color: black;
+}
+/*-------------TOP SECTION-------------*/
+.titles {
+  color: white;
+  text-align: center;
+  width: 50vw;
+  margin: 0 auto;
+}
+.titles h1 {
+  font-family: "roboto";
+  font-size: 5rem;
+  margin-bottom: 0;
+  text-shadow: 1px 1px 0 black;
+  color: #ffce14;
+}
+.titles p {
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 0 black;
+  font-size: 2rem;
+  background-color: rgb(65, 221, 148);
+  color: rgb(209, 106, 9);
+}
+.titles h2 {
+  font-size: 2rem;
+}
+/*-------------BOTTOM SECTION-----------*/
+.container-boxes {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  max-width: 80vw;
+}
+.box {
+  background: #ffce14;
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 350px;
+  max-height: 180px;
+  min-height: 180px;
+  transition: all 250ms ease-out;
+}
+.box:hover {
+  background: rgba(255, 255, 255, 0.7);
+  transform: translateY(-20%);
+}
+.box a {
+  text-decoration: none;
+  color: black;
+}
+.icon {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.text h3 {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 0;
+  color: black;
+}
+.text p {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  text-align: left;
+}
+.text {
+  padding: 0.5rem;
+}
+
+/*------MEDIAQUERIES-------*/
+@media (max-width: 1160px) {
+  .icon {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  .text h3 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .text p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  nav li a:hover {
+    background: none;
+    color: black;
+  }
+}
+@media (max-width: 850px) {
+  body {
+    height: 100%;
+  }
+  .container-boxes {
+    flex-direction: column;
+  }
+  .box:hover {
+    background: rgba(255, 255, 255, 0.7);
+    transform: none;
+  }
+  .titles h1 {
+    font-size: 3rem;
+  }
+}
+/* Package section*/
+.packagesoffers {
+  background: #d9d9e0;
+  padding: 10px 0;
+}
+
+.headings h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: capitalize;
+  text-align: center;
+  color: red;
+}
+.headings h2 {
+  text-align: center;
+}
+.tour-wrap {
+  width: 100%;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.tour-wrap .tour-entry {
+  width: 25%;
+  float: left;
+  position: relative;
+  height: 250px;
+  z-index: 0;
+  padding: 0;
+  margin: 0;
+}
+.tour-entry .cart-b {
+  text-transform: uppercase;
+  background-color: yellow;
+}
+@media screen and (max-width: 768px) {
+  .tour-wrap .tour-entry {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tour-wrap .tour-entry {
+    width: 100%;
+  }
+}
+.tour-wrap .tour-entry .tour-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 250px;
+  display: block;
+  z-index: 1;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .tour-wrap .tour-entry .tour-img {
+    -webkit-box-shadow: inset 0px -195px 142px -79px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: inset 0px -195px 142px -79px rgba(0, 0, 0, 0.49);
+    -ms-box-shadow: inset 0px -195px 142px -79px rgba(0, 0, 0, 0.49);
+    -o-box-shadow: inset 0px -195px 142px -79px rgba(0, 0, 0, 0.49);
+    box-shadow: inset 0px -195px 142px -79px rgba(0, 0, 0, 0.49);
+  }
+}
+.tour-wrap .tour-entry .desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  padding: 15px;
+}
+.tour-entry .tour-img .imgp {
+  text-align: center;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+}
+.tour-wrap .tour-entry .desc h2 {
+  font-size: 18px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  color: red;
+}
+.tour-wrap .tour-entry .desc .city {
+  display: block;
+  color: #1d11c5;
+  margin-bottom: 5px;
+}
+.tour-wrap .tour-entry .desc .price {
+  color: #000;
+  font-size: 20px;
+}
+.tour-wrap .tour-entry .desc .star {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #b3b3b3;
+}
+.tour-wrap .tour-entry .desc .star span i {
+  color: #ffdd00;
+}
+@media screen and (max-width: 768px) {
+  .tour-wrap .tour-entry .desc {
+    z-index: 2;
+  }
+  .tour-wrap .tour-entry .desc h2 {
+    color: #fff;
+  }
+  .tour-wrap .tour-entry .desc .city,
+  .tour-wrap .tour-entry .desc .star {
+    color: #e6e6e6;
+  }
+  .tour-wrap .tour-entry .desc .price {
+    color: #fff;
+    background: #00bbf0;
+    padding: 4px 7px;
+  }
+}
+.tour-wrap .tour-entry:hover .tour-img {
+  top: -45%;
+}
+@media screen and (max-width: 768px) {
+  .tour-wrap .tour-entry:hover .tour-img {
+    top: 0;
+  }
+}
+.f-tour {
+  width: 100%;
+  float: left;
+}
+.f-tour .f-tour-img {
+  display: block;
+  height: 210px;
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-box-shadow: inset 0px -195px 142px -79px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: inset 0px -195px 142px -79px rgba(0, 0, 0, 0.49);
+  -ms-box-shadow: inset 0px -195px 142px -79px rgba(0, 0, 0, 0.49);
+  -o-box-shadow: inset 0px -195px 142px -79px rgba(0, 0, 0, 0.49);
+  box-shadow: inset 0px -195px 142px -79px rgba(0, 0, 0, 0.49);
+}
+.f-tour .f-tour-img .desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+}
+.f-tour .f-tour-img .desc h3 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.f-tour .f-tour-img .desc .price small {
+  color: #fff;
+}
+.f-tour .desc h3 {
+  text-transform: uppercase;
+}
+.f-tour .desc h4 {
+  text-transform: uppercase;
+}
+.f-tour .desc ul {
+  margin-bottom: 30px;
+}
+.f-tour .desc ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.f-tour .desc ul li a {
+  color: #999999;
+}
+.f-tour .desc ul li a:hover {
+  color: #000;
+}
+
+.wrap-division {
+  padding-right: 2em;
+}
+@media screen and (max-width: 768px) {
+  .wrap-division {
+    padding-right: 0;
+  }
+}
+
+.tour {
+  display: block;
+  margin-bottom: 4em;
+}
+.tour .tour-img {
+  height: 300px;
+  margin-bottom: 20px;
+  display: block;
+  position: relative;
+}
+.tour .tour-img .price {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #00bbf0;
+  color: #fff;
+  padding: 8px 12px;
+  margin: 0;
+}
+.tour .tour-img .price span {
+  font-size: 16px;
+  font-weight: 500;
+}
+.tour .tour-img .price span small {
+  font-size: 16px;
+}
+.tour .desc {
+  display: block;
+}
+.tour .desc h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.tour .desc h2 a {
+  color: #000;
+}
+.tour .desc .city {
+  display: block;
+  color: #b3b3b3;
+  margin-bottom: 5px;
+}
+.tour .desc .star {
+  margin-bottom: 15px;
+  font-size: 12px;
+  color: #b3b3b3;
+}
+.tour .desc .star span i {
+  color: #ffdd00;
+}
+.f-tour-img,
+.room-img,
+.tour-img,
+.intro-img,
+.amenities-img,
+.blog-img,
+.aside-div,
+.happyclients,
+.newsletter,
+.hotel-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/***************************************Customer feedback css start ***************************************/
+
+.happyclients {
+  width: 100%;
+  height: 100vh;
+  padding: 20px 0;
+}
+.happyclients h1 {
+  font-size: 4rem;
+  text-transform: capitalize !important;
+}
+.boxx {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  transition: 0.3s ease;
+}
+.boxx:hover {
+  background: #16c9f6;
+}
+.boxx:hover p {
+  color: white;
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: -60px !important;
+}
+.carousel-indicators li {
+  background-color: #16c9f6 !important;
+}
+.boxx a img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+.boxx a:after {
+  content: "\f10d";
+  font-family: FontAwesome;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+  color: white;
+  position: absolute;
+  top: 120%;
+  left: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxx h1 {
+  font-size: 18px;
+  font-size: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+.boxx h2 {
+  font-size: 13px;
+  font-weight: 400px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+/***************************************Customer feedback css end***************************************/
+/*************************************** newsletter css start***************************************/
+.newsletter {
+  width: 100%;
+  height: 100vh;
+  margin: 20px auto;
+}
+
+.news-input {
+  border-radius: 100px 0px 0px 100px !important;
+  min-width: 150px;
+  min-height: 40px;
+}
+.input-group-text {
+  color: #fff !important;
+  background: #5bc0de !important;
+  border-radius: 0 100px 100px 0 !important;
+  min-width: 140px;
+  min-height: 40.5px;
+}
+
+/***************************************Rishikesh section css***************************************/
+.risi-div {
+  background: url(../images/tv13.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.details-div h1,
+h2 {
+  text-align: center;
+  background-size: auto;
+}
+.details-div p {
+  text-align: center;
+  background-color: rgb(247, 194, 247);
+}
+.badri-div {
+  background: url(../images/badrinath.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.kedar-div {
+  background: url(../images/kedar.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
